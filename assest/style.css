@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+input::-ms-reveal,
+      input::-ms-clear {
+        display: none;
+      }
+
+body {
+    background: #2BB673;
+    overflow: hidden;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.container {
+    border: none;
+    width: 400px;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+
+    font-family: monospace;
+    padding: 20px 30px;
+}
+
+.container h1 {
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+
+    position: relative;
+    margin-top: 40px;
+}
+
+.form-control input {
+    font-size: 1.2rem;
+    padding: 10px 5px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #adadad;
+    position: relative;
+}
+
+.form-control small {
+    padding: 5px 5px;
+    font-weight: 500;
+    width: 100%;
+    margin-right: 89%;
+    color: red;
+    font-size: 0.8rem;
+    display: flex;
+    flex: 1;
+
+}
+
+.form-control.error span {
+    position: absolute;
+    border-bottom: 3px solid #cc3c18;
+    top: 28px;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+.form-control input:focus {
+    background-color: #f4f3f3;
+}
+
+.form-control span {
+    position: absolute;
+    border-bottom: 3px solid #3bf00a;
+    top: 28px;
+    right: 0;
+    left: 0;
+    width: 0;
+}
+
+.form-control input:focus~span {
+    width: 100%;
+}
+
+
+.form-control .eye_icon,
+.form-control .eye_iconCf {
+    position: absolute;
+    right: -17px;
+    top: -3px;
+    /* display: none; */
+    padding: 10px;
+}
+
+.eye-slash_icon:hover,
+.eye-slashCf_icon:hover {
+    cursor: pointer;
+}
+
+.eye_icon:hover,
+.eye_iconCf:hover {
+    cursor: pointer;
+}
+
+
+.form-control .eye_icon.none,
+.form-control .eye_iconCf.none {
+
+    display: none;
+}
+
+.form-control .eye-slash_icon, 
+    .form-control .eye-slashCf_icon {
+    position: absolute;
+    right: -17px;
+    top: -3px;
+    /* display: none; */
+    padding: 10px;
+}
+
+.form-control .eye-slash_icon.none, 
+    .form-control .eye-slashCf_icon.none {
+
+    display: none
+}
+
+
+/* Ẩn các icon mặc định của trình duyệt cho input type password */
+#password,
+#passwordConfirmed {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Ẩn nút ẩn hiện password mặc định */
+.inputPasswordCf #passwordConfirmed,
+.inputPassword #password {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+
+
+#submit {
+    font-weight: 1.2rem;
+    margin: 10px 0;
+    width: 120px;
+    height: 40px;
+    background-color: #2BB673;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-weight: 550;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #56bf8c;
+}
